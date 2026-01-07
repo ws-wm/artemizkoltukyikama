@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Artemiz Koltuk Yıkama Bismil/Diyarbakır. Profesyonel ekipmanlarla derinlemesine koltuk, sandalye, yatak ve araç içi temizlik hizmeti. Hemen randevu alın!">
+    <meta name="keywords"
+        content="koltuk yıkama bismil,koltuk leke çıkarma bismil, diyarbakır koltuk temizleme, artemiz koltuk yıkama, araç içi temizlik,bismil yatak temizleme,kafe ve restoran sandalye yıkama,bismil temizlik şirketi">
+    <meta name="author" content="Artemiz Koltuk Yıkama">
+    <title>Artemiz Koltuk Yıkama | Bismil, Diyarbakır</title>
+
+    <!-- Google Fonts Removed -->
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ice-white': '#D0E0E8', // Darker Ice White
+                        'aqua-green': '#267A5B', // Darker Aqua Green
+                        'sky-blue': '#4A90C2', // Darker Sky Blue
+                        'deep-clean': '#101820', // Darker Deep Clean
+                    },
+                    fontFamily: {
+                        sans: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons (Phosphor Icons - Lightweight and Clean) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body class="bg-ice-white text-gray-700 font-sans antialiased overflow-x-hidden">
+
+    <!-- Sticky Header -->
+    <header class="fixed w-full top-0 z-50 transition-all duration-300" id="navbar">
+        <div class="absolute inset-0 bg-white/80 backdrop-blur-md shadow-sm"></div>
+        <div class="container mx-auto px-4 py-4 relative flex justify-between items-center">
+            <a href="#" class="flex items-center gap-2">
+                <img src="img/cici3.png" alt="Artemiz Koltuk Logo" class="h-12 w-auto object-contain">
+                <div class="flex flex-col leading-none">
+                    <span class="text-2xl font-extrabold tracking-tight text-gray-800">Artemiz</span>
+                    <span class="text-[10px] font-bold text-aqua-green uppercase tracking-[0.2em] mt-1">Koltuk
+                        Yıkama</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex items-center gap-8 font-medium text-gray-600">
+                <a href="#hero" class="hover:text-aqua-green transition-colors">Anasayfa</a>
+                <a href="#services" class="hover:text-aqua-green transition-colors">Hizmetler</a>
+                <a href="#gallery" class="hover:text-aqua-green transition-colors">Galeri</a>
+                <a href="#faq" class="hover:text-aqua-green transition-colors">SSS</a>
+                <a href="#contact"
+                    class="px-5 py-2.5 bg-sky-blue text-white rounded-full hover:bg-sky-400 transition-colors shadow-lg hover:shadow-sky-blue/30">İletişim</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-700 hover:text-aqua-green focus:outline-none">
+                <i class="ph ph-list text-3xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu"
+            class="absolute top-full left-0 w-full bg-white shadow-lg md:hidden hidden flex flex-col border-t border-gray-100">
+            <a href="#hero" class="block px-6 py-4 hover:bg-gray-50 border-b border-gray-50 mobile-link">Anasayfa</a>
+            <a href="#services"
+                class="block px-6 py-4 hover:bg-gray-50 border-b border-gray-50 mobile-link">Hizmetler</a>
+            <a href="#gallery" class="block px-6 py-4 hover:bg-gray-50 border-b border-gray-50 mobile-link">Galeri</a>
+            <a href="#faq" class="block px-6 py-4 hover:bg-gray-50 border-b border-gray-50 mobile-link">SSS</a>
+            <a href="#contact" class="block px-6 py-4 text-aqua-green font-semibold mobile-link">İletişim</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-32 pb-20 md:pt-48 md:pb-32 px-4 relative overflow-hidden">
+        <!-- Abstract Background Shapes -->
+        <div class="absolute top-0 right-0 w-full h-full -z-10 pointer-events-none">
+            <div
+                class="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-aqua-green/10 rounded-full blur-3xl opacity-60 animate-pulse-slow">
+            </div>
+            <div
+                class="absolute bottom-[10%] left-[-10%] w-[400px] h-[400px] bg-sky-blue/15 rounded-full blur-3xl opacity-60">
+            </div>
+        </div>
+
+        <div class="container mx-auto text-center max-w-4xl">
+            <div
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-sm border border-gray-100 mb-6 animate-fade-in-down">
+                <i class="ph-fill ph-shield-check text-aqua-green text-lg"></i>
+                <span class="text-sm font-medium text-gray-500">Bismil'in Güvenilir Temizlik Uzmanı</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight mb-6 animate-fade-in-up">
+                Bismil'in En Hijyenik <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-aqua-green to-sky-blue">Koltuk
+                    Yıkama</span> Hizmeti
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto animate-fade-in-up delay-100">
+                Profesyonel ekipmanlarla derinlemesine temizlik. Sağlığınız ve konforunuz için doğa dostu çözümler
+                sunuyoruz.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up delay-200">
+                <a href="#contact"
+                    class="w-full sm:w-auto px-8 py-4 bg-aqua-green text-white rounded-full font-semibold shadow-xl shadow-aqua-green/20 hover:bg-[#34a079] hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
+                    <i class="ph-bold ph-whatsapp-logo"></i>
+                    Randevu Al
+                </a>
+                <a href="#services"
+                    class="w-full sm:w-auto px-8 py-4 bg-white text-gray-700 border border-gray-200 rounded-full font-semibold hover:bg-gray-50 hover:border-gray-300 transition-all duration-300">
+                    Hizmetleri İncele
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white/50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-aqua-green font-semibold tracking-wide uppercase text-sm mb-2">Hizmetlerimiz</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Neleri Temizliyoruz?</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div
+                    class="group bg-white rounded-2xl shadow-sm hover:shadow-xl hover:shadow-aqua-green/10 border border-gray-100 transition-all duration-300 overflow-hidden">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="img/kotukci1-min.png" alt="Koltuk Yıkama"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+                    <div class="p-8">
+                        <div class="w-14 h-14 bg-ice-white rounded-xl flex items-center justify-center mb-6">
+                            <i class="ph-fill ph-armchair text-3xl text-aqua-green"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800 mb-3">Koltuk Yıkama</h4>
+                        <p class="text-gray-500 leading-relaxed">Kumaşın dokusuna zarar vermeden, derinlemesine kir ve
+                            leke çıkarma işlemi.</p>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div
+                    class="group bg-white rounded-2xl shadow-sm hover:shadow-xl hover:shadow-aqua-green/10 border border-gray-100 transition-all duration-300 overflow-hidden">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="img/sandalyeci2-min.png" alt="Sandalye Temizleme"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+                    <div class="p-8">
+                        <div class="w-14 h-14 bg-ice-white rounded-xl flex items-center justify-center mb-6">
+                            <i class="ph-fill ph-chair text-3xl text-aqua-green"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800 mb-3">Sandalye Temizleme</h4>
+                        <p class="text-gray-500 leading-relaxed">Kafe ve restoranlar için hijyenik, hızlı ve etkili
+                            sandalye temizliği.</p>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div
+                    class="group bg-white rounded-2xl shadow-sm hover:shadow-xl hover:shadow-aqua-green/10 border border-gray-100 transition-all duration-300 overflow-hidden">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="img/arabaci3-min.png" alt="Araç İçi Temizleme"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+                    <div class="p-8">
+                        <div class="w-14 h-14 bg-ice-white rounded-xl flex items-center justify-center mb-6">
+                            <i class="ph-fill ph-car text-3xl text-aqua-green"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800 mb-3">Araç İçi Temizleme</h4>
+                        <p class="text-gray-500 leading-relaxed">Aracınızın koltuklarını ve döşemelerini ilk günkü
+                            temizliğine kavuşturun.</p>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div
+                    class="group bg-white rounded-2xl shadow-sm hover:shadow-xl hover:shadow-aqua-green/10 border border-gray-100 transition-all duration-300 overflow-hidden">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="img/camici4-min.png" alt="Cami Halı Yıkama"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+                    <div class="p-8">
+                        <div class="w-14 h-14 bg-ice-white rounded-xl flex items-center justify-center mb-6">
+                            <i class="ph-fill ph-mosque text-3xl text-aqua-green"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800 mb-3">Cami Halı Yıkama</h4>
+                        <p class="text-gray-500 leading-relaxed">Geniş alanlar için profesyonel ekipmanlarla yerinde
+                            halı yıkama hizmeti.</p>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div
+                    class="group bg-white rounded-2xl shadow-sm hover:shadow-xl hover:shadow-aqua-green/10 border border-gray-100 transition-all duration-300 overflow-hidden">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="img/yatakci5-min.png" alt="Yatak Temizleme"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+                    <div class="p-8">
+                        <div class="w-14 h-14 bg-ice-white rounded-xl flex items-center justify-center mb-6">
+                            <i class="ph-fill ph-bed text-3xl text-aqua-green"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-800 mb-3">Yatak Temizleme</h4>
+                        <p class="text-gray-500 leading-relaxed">Yataklarınızdaki toz akarlarını ve bakterileri yok eden
+                            anti-alerjik temizlik.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section (Before & After) -->
+    <section id="gallery" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-aqua-green font-semibold tracking-wide uppercase text-sm mb-2">Galeri</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Öncesi & Sonrası</h3>
+                <p class="text-gray-500 mt-4">Temizlik farkını kendi gözlerinizle görün.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Gallery Item 1 -->
+                <div class="relative group overflow-hidden rounded-2xl shadow-lg h-80">
+                    <!-- Since I cannot generate images, I will use a CSS based representation or placeholders that look nice -->
+                    <div class="absolute inset-0 flex">
+                        <div class="w-1/2 h-full bg-gray-300 flex items-center justify-center relative overflow-hidden">
+                            <img src="img/once1.png" alt="Öncesi" class="absolute inset-0 w-full h-full object-cover">
+                            <span
+                                class="relative z-10 bg-white/90 text-gray-800 px-3 py-1 rounded text-xs font-bold uppercase tracking-wider shadow-sm">Öncesi</span>
+                        </div>
+                        <div class="w-1/2 h-full bg-white flex items-center justify-center relative overflow-hidden">
+                            <img src="img/oncee1.png" alt="Sonrası" class="absolute inset-0 w-full h-full object-cover">
+                            <span
+                                class="bg-aqua-green text-white px-3 py-1 rounded text-xs font-bold uppercase tracking-wider shadow-sm absolute z-10">Sonrası</span>
+                        </div>
+                    </div>
+                    <!-- Divider Line -->
+                    <div
+                        class="absolute inset-y-0 left-1/2 w-1 bg-white shadow-lg transform -translate-x-1/2 group-hover:bg-aqua-green transition-colors">
+                    </div>
+                    <!-- <div class="absolute bottom-4 left-0 right-0 text-center">
+                        <span
+                            class="inline-block bg-black/50 backdrop-blur-sm text-white text-sm px-4 py-1 rounded-full">Koltuk
+                            Leke Çıkarma</span>
+                    </div> -->
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="relative group overflow-hidden rounded-2xl shadow-lg h-80">
+                    <div class="absolute inset-0 flex">
+                        <div class="w-1/2 h-full bg-gray-300 flex items-center justify-center relative overflow-hidden">
+                            <img src="img/once2.png" alt="Öncesi" class="absolute inset-0 w-full h-full object-cover">
+                            <span
+                                class="relative z-10 bg-white/90 text-gray-800 px-3 py-1 rounded text-xs font-bold uppercase tracking-wider shadow-sm">Öncesi</span>
+                        </div>
+                        <div class="w-1/2 h-full bg-white flex items-center justify-center relative overflow-hidden">
+                            <img src="img/oncee2.png" alt="Sonrası" class="absolute inset-0 w-full h-full object-cover">
+                            <span
+                                class="bg-aqua-green text-white px-3 py-1 rounded text-xs font-bold uppercase tracking-wider shadow-sm absolute z-10">Sonrası</span>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute inset-y-0 left-1/2 w-1 bg-white shadow-lg transform -translate-x-1/2 group-hover:bg-aqua-green transition-colors">
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="relative group overflow-hidden rounded-2xl shadow-lg h-80">
+                    <div class="absolute inset-0 flex">
+                        <div class="w-1/2 h-full bg-gray-300 flex items-center justify-center relative overflow-hidden">
+                            <img src="img/once3.png" alt="Öncesi" class="absolute inset-0 w-full h-full object-cover">
+                            <span
+                                class="relative z-10 bg-white/90 text-gray-800 px-3 py-1 rounded text-xs font-bold uppercase tracking-wider shadow-sm">Öncesi</span>
+                        </div>
+                        <div class="w-1/2 h-full bg-white flex items-center justify-center relative overflow-hidden">
+                            <img src="img/oncee3.png" alt="Sonrası" class="absolute inset-0 w-full h-full object-cover">
+                            <span
+                                class="bg-aqua-green text-white px-3 py-1 rounded text-xs font-bold uppercase tracking-wider shadow-sm absolute z-10">Sonrası</span>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute inset-y-0 left-1/2 w-1 bg-white shadow-lg transform -translate-x-1/2 group-hover:bg-aqua-green transition-colors">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-white/50">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <div class="text-center mb-16">
+                <h2 class="text-aqua-green font-semibold tracking-wide uppercase text-sm mb-2">SSS</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Sıkça Sorulan Sorular</h3>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div
+                    class="border border-gray-200 rounded-xl bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <button
+                        class="accordion-btn w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-semibold text-gray-800">Koltuk yıkama işlemi ne kadar sürer?</span>
+                        <i
+                            class="ph-bold ph-caret-down text-aqua-green transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="px-6 pb-6 text-gray-600">
+                            Ortalama bir koltuk takımının yıkama işlemi kirlilik durumuna göre yaklaşık 1.5 - 2 saat
+                            sürmektedir.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div
+                    class="border border-gray-200 rounded-xl bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <button
+                        class="accordion-btn w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-semibold text-gray-800">Koltuk yıkama sonrası kuruma süresi nedir?</span>
+                        <i
+                            class="ph-bold ph-caret-down text-aqua-green transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="px-6 pb-6 text-gray-600">
+                            Yıkama sonrası koltuklarınız, oda sıcaklığına ve havalandırmaya bağlı olarak ortalama 4-6
+                            saat içerisinde tamamen kurumaktadır.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div
+                    class="border border-gray-200 rounded-xl bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <button
+                        class="accordion-btn w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-semibold text-gray-800">Koltuk yıkama işlemi kumaşa zarar verir mi?</span>
+                        <i
+                            class="ph-bold ph-caret-down text-aqua-green transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="px-6 pb-6 text-gray-600">
+                            Hayır, kesinlikle zarar vermez. Kumaş türüne uygun özel şampuanlar ve ekipmanlar
+                            kullanılarak profesyonelce temizlenir.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div
+                    class="border border-gray-200 rounded-xl bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <button
+                        class="accordion-btn w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-semibold text-gray-800">Koltuk yıkama hizmeti ne sıklıkla alınmalıdır?</span>
+                        <i
+                            class="ph-bold ph-caret-down text-aqua-green transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="px-6 pb-6 text-gray-600">
+                            Hijyenik bir yaşam alanı için koltuklarınızı yılda en az 2 kez profesyonel olarak
+                            yıkatmanızı öneriyoruz.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div
+                    class="border border-gray-200 rounded-xl bg-white overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <button
+                        class="accordion-btn w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                        <span class="font-semibold text-gray-800">Araba koltuğu yıkama işlemi araç döşemelerine zarar
+                            verir mi?</span>
+                        <i
+                            class="ph-bold ph-caret-down text-aqua-green transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="px-6 pb-6 text-gray-600">
+                            Hayır, araç döşemeleri için özel olarak üretilmiş, düşük nem bırakan makineler ve koruyucu
+                            temizleyiciler kullanıyoruz.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gray-50 -z-10"></div>
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-aqua-green font-semibold tracking-wide uppercase text-sm mb-2">İletişim</h2>
+            <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Hemen Randevu Alın</h3>
+            <p class="text-gray-600 mb-12 max-w-xl mx-auto">
+                Bismil ve çevresinde profesyonel temizlik hizmeti için bize ulaşın. Sorularınızı yanıtlamaktan
+                memnuniyet duyarız.
+            </p>
+
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-12">
+                <!-- Phone Button -->
+                <a href="tel:+905425658985"
+                    class="group flex items-center gap-4 bg-sky-blue text-white px-8 py-5 rounded-2xl shadow-xl hover:bg-sky-400 hover:-translate-y-1 transition-all duration-300 w-full md:w-auto min-w-[280px]">
+                    <div class="bg-white/20 p-3 rounded-full group-hover:bg-white/30 transition-colors">
+                        <i class="ph-fill ph-phone-call text-2xl"></i>
+                    </div>
+                    <div class="text-left">
+                        <div class="text-xs opacity-90 uppercase tracking-widest font-semibold">Bizi Arayın</div>
+                        <div class="text-lg font-bold">0542 565 89 85</div>
+                    </div>
+                </a>
+
+                <!-- WhatsApp Button (Inline) -->
+                <a href="https://wa.me/905425658985"
+                    class="group flex items-center gap-4 bg-aqua-green text-white px-8 py-5 rounded-2xl shadow-xl hover:bg-[#34a079] hover:-translate-y-1 transition-all duration-300 w-full md:w-auto min-w-[280px]">
+                    <div class="bg-white/20 p-3 rounded-full group-hover:bg-white/30 transition-colors">
+                        <i class="ph-fill ph-whatsapp-logo text-2xl"></i>
+                    </div>
+                    <div class="text-left">
+                        <div class="text-xs opacity-90 uppercase tracking-widest font-semibold">WhatsApp</div>
+                        <div class="text-lg font-bold">Mesaj Gönder</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="flex items-center justify-center gap-2 text-gray-500 mb-12">
+                <i class="ph-fill ph-map-pin text-aqua-green"></i>
+                <span>Bismil / Diyarbakır</span>
+            </div>
+
+            <!-- Web Design Ad -->
+            <div
+                class="mt-16 p-1 bg-gradient-to-tr from-violet-600 via-pink-500 to-orange-400 rounded-[2rem] shadow-2xl max-w-2xl mx-auto group">
+                <div class="bg-[#0f172a] rounded-[1.9rem] p-8 relative overflow-hidden">
+                    <!-- Abstract Background Glows (Distinctive Brand Colors) -->
+                    <div
+                        class="absolute -right-20 -top-20 w-64 h-64 bg-fuchsia-600/20 rounded-full blur-[80px] group-hover:bg-fuchsia-600/30 transition-colors duration-700">
+                    </div>
+                    <div
+                        class="absolute -left-20 -top-20 w-48 h-48 bg-violet-600/20 rounded-full blur-[60px] group-hover:bg-violet-600/30 transition-colors duration-700">
+                    </div>
+                    <div class="relative z-10 flex flex-col items-center text-center">
+                        <h4 class="text-2xl md:text-3xl font-bold text-white mb-4 tracking-tight">Kendi Web Sitenizi Mi
+                            İstiyorsunuz?</h4>
+                        <p class="text-gray-400 mb-8 leading-relaxed max-w-md">
+                            İşletmeniz için modern, hızlı ve profesyonel bir web sitesi tasarımı mı arıyorsunuz? Sizin
+                            için
+                            burdayız.
+                        </p>
+                        <a href="https://artemizmedya.com" target="_blank"
+                            class="inline-flex items-center gap-3 bg-gradient-to-r from-violet-600 to-pink-600 text-white px-10 py-4 rounded-full font-bold hover:scale-105 hover:shadow-[0_0_20px_rgba(139,92,246,0.4)] active:scale-95 transition-all duration-300">
+                            <i class="ph-bold ph-globe text-xl"></i>
+                            Web Sitemizi Ziyaret Edin
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#2C3E50] text-white py-12 border-t border-gray-800">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <img src="img/cici3.png" alt="Artemiz Koltuk Logo" class="h-10 w-auto object-contain">
+                <div class="flex flex-col leading-none">
+                    <span class="text-2xl font-extrabold tracking-tight">Artemiz</span>
+                    <span class="text-[10px] font-bold text-aqua-green uppercase tracking-[0.2em] mt-1">Koltuk
+                        Yıkama</span>
+                </div>
+            </div>
+            <div class="text-gray-400 text-sm">
+                &copy; 2026 Artemiz Koltuk Yıkama. Tüm hakları saklıdır.
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Fixed Floating WhatsApp Button -->
+    <a href="https://wa.me/905425658985" target="_blank"
+        class="whatsapp-alive fixed bottom-6 right-6 z-50 bg-aqua-green text-white w-16 h-16 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 hover:bg-[#34a079] transition-all duration-300 group">
+        <i class="ph-fill ph-whatsapp-logo text-4xl"></i>
+        <span
+            class="absolute right-full mr-4 bg-white text-gray-800 text-sm font-bold px-3 py-1 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+            Hemen Yazın!
+        </span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
